@@ -1,8 +1,8 @@
 /*
-Since I was a child I've always loved baking and people have always told me that I should open a pastry buisness. 
+Hi, Since I was a child I've always loved baking and people have always told me that I should open a pastry buisness. 
 I've just started making plans, and will be opening it in January of 2023, G-d willing. 
 With all the orders that I am anticipating, I would like to have all the information stored in one place.
-And of course, being that I would like to start my buisness off on the right foot, everything must be as clear and concise and possible.
+And of course, being that I would like to start my buisness off on the right foot, everything must be as clear and concise as possible.
 
 I would like a table of all the orders that come in, including the customer's name, item and cost of the order. 
 To give a clearer idea, I will need the item, quantity, price per unit, total sum, date ordered, and date needed by.
@@ -24,16 +24,26 @@ A:Our items range from $2.50 - $450. Once things settle down I plan to add few g
 Q:What are the ways that customers can place an order?
 A:Customers have 4 options. They can either call, text, mail, or email us.
 
-Q:Is there any other way customers can pay?
-A:They can pay with cash or card.
+Q:What payment methods do you accept?
+A:They can pay with cash or card. I would like to have the payment method in the table as it's important for me to see.
 
 Q:Do you deliver?
 A:Unfortunately we do not deliver, customers need to come pick up their orders.
 
 Reports:
 1. I will need a list of my top 3 goods that are the most popular.
-2. I would like to know how many customers are paying with cash and how many with card, just so I can know how to better service them. (Eventually I would like to switch over to card only.)
-3. I would like to have a concise list of the date, item, quantity, and order total so that I can better understand what's poplular at different times of year.
+2. I would like to know how many customers are paying with cash and how many with card, just so I can know how to better service them. 
+  (Eventually I would like to switch over to card only.). 
+  I also need to see the average spent per payment method.
+3. I would like to have a concise list of the date, item, quantity, and order total, grouped by the month it was ordered, so that I can better understand what's poplular at different times of year.
+4. People often complain that my prices are exorbatant. 
+  I was thinking to have a "Buy 1 get 1 free" for the first and 15th of each month. 
+  I would like to know the total loss, as well as the loss per month.
+5. As a new buisness owner, I would like to have an incentive system set up to encourage my employees to do their best. 
+  I currently have 3 employees. Rina makes the cakes, Dina makes the cupcakes, and Sara makes the cookies.
+  I would like each employee to receive 5% of what their product brought per month.
+  It should also show how many pastries they've made that month.
+  
 
 Sample Data:
 Brian Johns, Wedding cookies, 75, $4.5, $337.50, December 9 2022, January 3 2023, 0383, Call
@@ -48,4 +58,8 @@ Emma Bird, Wedding cupcakes, 75, $5.50, $412.5, December 1 2022, January 15 2023
 Emma Bird, Wedding cookies 100, $6.50 $650, December 1 2022, January 15 2023, Email
 Brian Sars, Birthday cake, 1, $115, $115, December 26 2022, January 31 2023, Text
 
+
+
 */
+
+
