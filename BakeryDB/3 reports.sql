@@ -7,7 +7,7 @@ order by NumberOfOrders desc
 /*2. I would like to know how many customers are paying with cash and how many with card, just so I can know how to better service them. 
   (Eventually I would like to switch over to card only.). 
   I also need to see the average spent per payment method.*/
-select count(*), AvgSpent = avg(o.TotalCost), o.PaymentType
+select NumberOfCustomers = count(*), AvgSpent = avg(o.TotalCost), o.PaymentType
 from Orders o
 group by o.PaymentType
 
@@ -22,7 +22,7 @@ order by MonthOrdered desc
 select TotalLoss = sum(o.TotalCost) - sum(case when datepart(day, o.DateOrdered) in(1,15) and o.Quantity > 1 then (o.Quantity / 2) * o.PricePerUnit else o.TotalCost end)
 from orders o
 
-select LossPerMonth = sum(o.TotalCost) - sum(case when datepart(day, o.DateOrdered) in(1,15) and o.Quantity > 1 then (o.Quantity / 2) * o.PricePerUnit else o.TotalCost end), datename(month, o.DateOrdered)
+select LossPerMonth = sum(o.TotalCost) - sum(case when datepart(day, o.DateOrdered) in(1,15) and o.Quantity > 1 then (o.Quantity / 2) * o.PricePerUnit else o.TotalCost end), Month = datename(month, o.DateOrdered)
 from orders o
 group by datename(month, o.DateOrdered)
 /*5. As a new buisness owner, I would like to have an incentive system set up to encourage my employees to do their best. 
